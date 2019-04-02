@@ -1,0 +1,158 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #c4c4c4;
+  font-family: "Helvetica", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: cadetblue;
+
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #ccc000;
+}
+
+/*IMPORTANT --> In the CSS, a class selector is a name preceded by a full stop (“.”)
+and an ID selector is a name preceded by a hash character (“#”).
+The difference between an ID and a class is that an ID can be used
+to identify one element, whereas a class can be used to identify more than one.
+
+This is why we need to use "#" in our css
+*/
+
+#menuBurger
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+  /*don't stress about it yet this is a browser prefix, so your navbar displays correctly
+  we will talk about that later*/
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuBurger input
+{
+  display: block;
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuBurger span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuBurger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuBurger span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuBurger input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuBurger input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuBurger input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+ #menuBurger input:checked ~ ul
+ {
+   transform: none;
+ }
