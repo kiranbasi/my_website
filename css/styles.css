@@ -4,7 +4,7 @@ body
   padding: 0;
   background: #f5f5f5;
   color: #c4c4c4;
-  font-family: "Arial", sans-serif;
+  font-family: 'Crimson Text', serif;
 }
 
 a
@@ -26,7 +26,9 @@ text-align: center;
 }
 
 h1 {
-font-size: 4em;
+font-family: 'Lora', serif;
+font-size: 3em;
+letter-spacing: 3px;
 }
 
 h2 {
@@ -36,6 +38,13 @@ h2 {
 
 p.lead {
   font-size: 1.5em;
+}
+
+img#cv {
+display: flex;
+justify-content: center;
+padding: 20px;
+margin: 0 auto;
 }
 
 /*IMPORTANT --> In the CSS, a class selector is a name preceded by a full stop (“.”)
