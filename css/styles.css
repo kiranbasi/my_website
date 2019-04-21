@@ -67,25 +67,24 @@ padding: 20px;
 margin: 0 auto;
 }
 
-
 .social-media-buttons {
-display: flex;
-justify-content: center;
-margin: 0 auto;
-}
-
-.fa-linkedin {
-padding: 20px;
-}
-
-.fa-instagram {
-padding: 20px;
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .fa-pinterest {
-padding: 20px;
+  padding: 30px;
 }
 
+.fa-instagram {
+  padding: 30px;
+}
+
+.fa-linkedin {
+  padding: 30px;
+}
 
 /*IMPORTANT --> In the CSS, a class selector is a name preceded by a full stop (“.”)
 and an ID selector is a name preceded by a hash character (“#”).
@@ -224,12 +223,4 @@ This is why we need to use "#" in our css
  #menuBurger input:checked ~ ul
  {
    transform: none;
- }
-
-
-
- /* lesson ggOyR0iXCbMQv3Xipma34MD */
- #grid img {
-   width: 100%
-   margin: 15px 0; /* 15 top 0 right 20 bottom 30left */
  }
