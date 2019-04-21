@@ -67,6 +67,26 @@ padding: 20px;
 margin: 0 auto;
 }
 
+
+.social-media-buttons {
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+
+.fa-linkedin {
+padding: 20px;
+}
+
+.fa-instagram {
+padding: 20px;
+}
+
+.fa-pinterest {
+padding: 20px;
+}
+
+
 /*IMPORTANT --> In the CSS, a class selector is a name preceded by a full stop (“.”)
 and an ID selector is a name preceded by a hash character (“#”).
 The difference between an ID and a class is that an ID can be used
