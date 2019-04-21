@@ -47,7 +47,7 @@ letter-spacing: 3px;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: #cfbda5
 }
 
@@ -57,7 +57,7 @@ h3 {
 }
 
 p.lead {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 img#cv {
@@ -81,6 +81,7 @@ This is why we need to use "#" in our css
   position: relative;
   top: 50px;
   left: 50px;
+
   /*float: right; pushes to the right */
 
   z-index: 1;
@@ -203,4 +204,12 @@ This is why we need to use "#" in our css
  #menuBurger input:checked ~ ul
  {
    transform: none;
+ }
+
+
+
+ /* lesson ggOyR0iXCbMQv3Xipma34MD */
+ #grid img {
+   width: 100%
+   margin: 15px 0; /* 15 top 0 right 20 bottom 30left */
  }
