@@ -8,51 +8,50 @@
 	    <title>Kiran Basi</title>
 
 	    <!-- ADD BOOTSTRAP CORE HERE!!!! bootstrap is a lower priority as it is above css-->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-			<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- icons -->
-			<link rel="stylesheet" type="text/css" href="./css/styles.css">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 		 <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+ 		 <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+ 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- icons -->
+ 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 		 <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
 
 </head>
 
 <body>
 
-	<p>
-	  <a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a>
-		<a class="download" href="./images/cv.pdf"><span class="glyphicon glyphicon-download"></span></a>
-	</p>
+
 
 
 	<!--NAV BAR-->
-	<nav role="navigation">
-	  <div id="menuBurger">
-	    <!--IMPORTANT
-	    A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
-	    -->
-	    <input type="checkbox" />
 
-	    <!--Some spans to act as a hamburger bars.-->
-	    <span></span>
-	    <span></span>
-	    <span></span>
+	<div class="navbar">
+		<a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a href="./page2">CV</a>
+		<a href="./page3">Projects</a>
+		<a href="./page4" class="contact">Contact</a>
+		<a class="download" href="./images/cv.pdf"><span class="glyphicon glyphicon-download"></span></a>
+	</div>
 
-	    <!--The menu has to be inside our button, so it activates on click through css file-->
-	    <ul id="menu">
-	      <a href="./page2.html"><li>CV</li></a>
-	      <a href="./page3.html"><li>Projects</li></a>
-	      <a href="#"><li>Contact</li></a>
-	    </ul>
-	  </div>
-	</nav>
 
 <div>
 	<img id="cv" src="./images/cv.jpg" alt="CV" width="1000px">
 </div>
 
-<br>
-<br>
-<br>
+
 
 </body>
+
+<footer>
+
+	<hr>
+	<div class="social-media-buttons">
+
+			<a href="https://www.linkedin.com/in/kiran-basi/" class="fa fa-linkedin"></a>
+			<a href="https://www.instagram.com/kiranbasi/" class="fa fa-instagram"></a>
+			<a href="https://www.pinterest.co.uk/k_basi/" class="fa fa-pinterest"></a>
+	</div>
+
+</footer>
+
+</html>

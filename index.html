@@ -20,32 +20,57 @@
 
 <body>
 
-	<p>
-	  <a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a>
-	</p>
 
 
 	<!--NAV BAR-->
-	<nav role="navigation">
-	  <div id="menuBurger">
-	    <!--IMPORTANT
-	    A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
-	    -->
-	    <input type="checkbox" />
 
-	    <!--Some spans to act as a hamburger bars.-->
-	    <span></span>
-	    <span></span>
-	    <span></span>
+	<div class="navbar">
+		<a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a href="./page2.html">CV</a>
+		<a href="./page3.html">Projects</a>
+		<a href="./page4.html" class="contact">Contact</a>
+	</div>
 
-	    <!--The menu has to be inside our button, so it activates on click through css file-->
-	    <ul id="menu">
-	      <a href="./page2.html"><li>CV</li></a>
-	      <a href="./page3.html"><li>Projects</li></a>
-	      <a href="#"><li>Contact</li></a>
+
+
+	<!--nav bar
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="./page2.html">CV</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Projects
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						 <a class="dropdown-item" href="#">Article 25</a>
+						 <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Graduation Project</a>
+	          <a class="dropdown-item" href="#">Primer</a>
+	          <a class="dropdown-item" href="#">Exploring Experience</a>
+						<a class="dropdown-item" href="#">Dwelling +</a>
+	        </div>
+	      </li>
+
 	    </ul>
+
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
 	  </div>
-	</nav>
+	</nav> -->
+
 
 	<main role="main" class="container">
 
@@ -55,11 +80,11 @@
 
 			<h3> architecture portfolio </h3>
 			<hr>
-			<p class="lead">Intro<br>
+			<p class="lead">Hi I'm Kiran!
+				<br>
+				I graduated from Newcastle University in 2018 and am currently working as a Part 1 Architectural Assistant at Article 25, a humanitarian architecture charity based in London. I am working on the redesign and expansion of a school in Niger. </p><br>
 
 		</div>
-
-
 
 <!-- CAROUSEL -->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -96,28 +121,31 @@
 
 <!-- columns -->
 <div class="row">
+
 	<div class="col-sm">
-	 	<img src="./images/primer.jpg" alt="Primer" width="300px">
-	  <br/>Primer
+		<img src="./images/final_model.jpg" alt="Culture & Legacy" width="350px">
+		<br/><br/><a class="feature" href="./culture.html">Culture & Legacy</a>
 	</div>
 
 	<div class="col-sm">
-		<img src="./images/expl_exp.jpg" alt="Exploring Experience" width="300px">
-		<br/>Exploring Experience
+	 	<img src="./images/primer.jpg" alt="Primer" width="350px">
+	  <br/><br/><a class="feature" href="./primer.html">Primer</a>
 	</div>
 
 	<div class="col-sm">
-		<img src="./images/final_model.jpg" alt="Culture & Legacy" width="300px">
-		<br/>
-		Culture & Legacy
+		<img src="./images/expl_exp.jpg" alt="Exploring Experience" width="350px">
+		<br/><br/><a class="feature" href="./exploringexperience.html">Exploring Experience</a>
 	</div>
+
+
 </div>
 
 <br>
 <br>
 
-
 <footer>
+
+	<hr>
 	<div class="social-media-buttons">
 
 			<a href="https://www.linkedin.com/in/kiran-basi/" class="fa fa-linkedin"></a>
@@ -126,8 +154,6 @@
 	</div>
 
 </footer>
-
-
 
 <!-- Bootstrap core JavaScript (for carousel)================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
