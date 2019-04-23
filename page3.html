@@ -8,10 +8,11 @@
 	    <title>Kiran Basi</title>
 
 	    <!-- ADD BOOTSTRAP CORE HERE!!!! bootstrap is a lower priority as it is above css-->
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 			<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- icons -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<link rel="stylesheet" type="text/css" href="./css/styles.css">
 
 
@@ -19,32 +20,14 @@
 
 <body>
 
-	<p>
-	  <a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a>
-	</p>
-
-
 	<!--NAV BAR-->
-	<nav role="navigation">
-	  <div id="menuBurger">
-	    <!--IMPORTANT
-	    A fake / hidden checkbox is used as click reciever (when we click on the burger to trigger the action), so you can use the :checked selector on it in our css file.
-	    -->
-	    <input type="checkbox" />
 
-	    <!--Some spans to act as a hamburger bars.-->
-	    <span></span>
-	    <span></span>
-	    <span></span>
-
-	    <!--The menu has to be inside our button, so it activates on click through css file-->
-	    <ul id="menu">
-	      <a href="./page2.html"><li>CV</li></a>
-	      <a href="./page3.html"><li>Projects</li></a>
-	      <a href="#"><li>Contact</li></a>
-	    </ul>
-	  </div>
-	</nav>
+	<div class="navbar">
+		<a class="home" href="./index.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a href="./page2.html">CV</a>
+		<a href="./page3.html">Projects</a>
+		<a href="./page4.html" class="contact">Contact</a>
+	</div>
 
 	<main role="main" class="container">
 
@@ -52,9 +35,62 @@
 			<br>
 			<h1><strong>kiran basi</strong></h1>
 
-			<h3> architecture portfolio </h3>
-			<hr>
-
-
+			<h3> projects </h3>
+			<hr/>
 		</div>
+
+
+
+
+
+
+	</div>
+
+	<hr/>
+
+	<h2> Other Projects </h2>
+	<br/>
+
+	<!-- columns -->
+	<div class="row">
+
+		<div class="col-sm">
+			<img src="./images/final_model.jpg" alt="Culture & Legacy" width="350px">
+			<br/><br/><a class="feature" href="./culture.html">Culture & Legacy</a>
+		</div>
+
+		<div class="col-sm">
+		 	<img src="./images/primer.jpg" alt="Primer" width="350px">
+		  <br/><br/><a class="feature" href="./primer.html">Primer</a>
+		</div>
+
+		<div class="col-sm">
+			<img src="./images/expl_exp.jpg" alt="Exploring Experience" width="350px">
+			<br/><br/><a class="feature" href="./exploringexperience.html">Exploring Experience</a>
+		</div>
+
+
+	</div>
+
+	<br/>
+	<br/>
+
+
+
+
+
+
+
 	</body>
+	<footer>
+
+		<hr>
+		<div class="social-media-buttons">
+
+				<a href="https://www.linkedin.com/in/kiran-basi/" class="fa fa-linkedin"></a>
+				<a href="https://www.instagram.com/kiranbasi/" class="fa fa-instagram"></a>
+				<a href="https://www.pinterest.co.uk/k_basi/" class="fa fa-pinterest"></a>
+		</div>
+
+	</footer>
+	</html>
