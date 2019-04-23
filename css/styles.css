@@ -18,7 +18,7 @@ a
 
 a:hover
 {
-  color: #ccc000;
+  color: cadetblue;
 }
 
 
@@ -45,7 +45,7 @@ h3 {
 }
 
 p.lead {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 img#cv {
@@ -85,12 +85,13 @@ margin: 0 auto;
 .navbar a{
 	display: block;
 	text-align: center;
-	padding: 14px 20px;
+	padding: 3px 3px;
 	text-decoration: none;
 }
 
 /*Change colour of link on hover in navbar*/
 .navbar a:hover{
+  color: inherit;
 	background-color: #ddd;
 }
 
